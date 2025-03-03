@@ -1,0 +1,136 @@
+body {
+    background-color: #CB9DF0;
+    color: #7E1891;
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #FCC737;
+    padding: 15px;
+    text-align: right;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #7E1891;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+    background: url('HeaderBG.png') no-repeat center center; /* Set the background image */
+    background-size: cover;
+    color: #ffffff;
+    padding: 100px 50px; /* Add padding to prevent overlap */
+    position: relative; /* Ensures it starts below navbar */
+    z-index: 1;
+}
+
+.header .text {
+    flex: 1;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.header h1 {
+    font-size: 90px;
+}
+
+.section h2 {
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+    font-size: 90px;
+}
+
+#about,#contact {
+    background-color: #f6e5d9;
+}
+
+#about p, #skills li, #contact p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.header .btn {
+    display: inline-block;
+    background-color: #FCC737;
+    color: #7E1891;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.header .btn:hover, .credential-button:hover, .linkedin-button:hover{
+    background-color: #F26B0F;color: #efe9e4;
+}
+
+.header .image {
+    flex: 1;
+    text-align: right;
+    padding-right: 10%;
+}
+
+.header .image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.section {
+    margin: 50px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .header .text, .header .image {
+        text-align: center;
+        padding: 0;
+    }
+@media (max-width: 768px) {
+        #skills h2 {
+            font-size: 50px; /* Adjusts for mobile */
+        }
+    }
+    
+}
+
+.skills-list {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.credential-button, .linkedin-button {
+    display: inline-block;
+    background-color: #7E1891;
+    color: #efe9e4;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
